@@ -1,0 +1,188 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 390px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    min-width: 390px;
+
+}
+
+.wrap>* {
+    
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    background-color: #ff8c00;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+    font-weight: bold;
+    font-size: 7px;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.block2 {
+    background-color: #f9eae1;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+
+
+}
+
+.block2 h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.block2 li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
+}
+
+.block3 {
+    background-color: #fcbb71;
+    height: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.block4 {
+
+    background-color: #CFBEDA;
+    text-align: center;
+    padding: 1.2rem;
+    box-sizing: border-box;
+}
+
+.detective-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.detective-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.block6{
+    background-color: #bb9d99;
+    padding: 10px;
+    box-sizing: border-box;
+    flex:1
+
+}
+.news-heading {
+    font-size: 1rem;
+    text-align: center;
+}
+.news-description {
+    font-size: 0.8rem;
+}
+
+.block5{
+    background: #A491D3;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.founding-title {
+    margin-bottom: 10px;
+}
+.founding-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.founding-highlights {
+    padding-left: 20px;
+    font-size: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+
+}
+.container2{
+    display: flex;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    height: 50px;
+    background-color: #7d4f50;
+    text-align: right;
+    color: #f9eae1;
+    padding: 0.4rem;
+}
+
+@media all and (min-width: 600px){
+    .container_1{
+        display: flex;
+        flex-grow: 1;
+    }
+    .block2{
+        min-width: 25%;
+        height: auto;
+        flex-grow: 1;
+    }
+    .container,
+    .container2{
+        flex-grow: 1;
+    }
+}
+.lab5{
+    display: flex;
+    flex-direction: column;
+    
+}
+.lab5>*{
+    font-size: small;
+}
+.reset-styles {
+    all: initial;
+    box-sizing: border-box;
+}
+
+
+
