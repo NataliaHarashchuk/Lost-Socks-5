@@ -45,19 +45,20 @@ function getCookie(name) {
     return null;
 }
 
-function eraseCookie(name) {
-    document.cookie = `${name}=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;`;
-}
-
 window.onload = function() {
     const reversedNumber = getCookie('reversedNumber');
     if (reversedNumber) {
         alert(`Перевернуте число з cookies: ${reversedNumber}\nПісля натискання «ОК» cookies будуть видалені.`);
         eraseCookie('reversedNumber');
-        alert('Cookies були видалені.\nКористувач буде перенаправлений на початкову сторінку.');
-        location.reload();
+        
+        if (!getCookie('reversedNumber')) {
+            alert('Cookies були видалені.');
+        } else {
+            alert('Не вдалося видалити cookies. Перевірте конфігурацію.');
+        }
     }
 };
+
 
 document.getElementById('reverse-button').addEventListener('click', function() {
     const numberInput = document.getElementById('number-input').value;
